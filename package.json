@@ -1,0 +1,11 @@
+{
+  "name": "agona_landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch assets/styles/main.sass:./main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
