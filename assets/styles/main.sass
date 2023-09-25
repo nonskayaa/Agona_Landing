@@ -13,9 +13,41 @@
 body, p,h1,h2,h3,h4,h5
   @include reset
 
+.with-icon
+    display: flex
+    align-items: center
 
-.container
-  max-width: 1835px
+.dropbtn
+  background: none
+  color: black
+  font-size: 14px
+  border: none
+  font-weight: 600
+  
+
+
+.dropdown-content
+  display: none
+  position: absolute
+  background-color: #f1f1f1
+  min-width: 160px
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+  z-index: 1
+
+.dropdown-content a 
+  color: black
+  padding: 12px 16px
+  text-decoration: none
+  display: block
+
+
+.dropdown-content a:hover 
+  background-color: #ddd
+
+.dropdown:hover .dropdown-content 
+  display: block
+
+
 
 @media (max-width: 1800px) 
 
@@ -34,6 +66,14 @@ body, p,h1,h2,h3,h4,h5
 
     
   .banner-section
+    
+    // .content-sliders  
+    //   padding-left: calc(5px + (30 - 10)*((110vw - 320px)/(1835 - 320)))
+    //   padding-right: calc(5px + (30 - 10)*((110vw - 320px)/(1835 - 320)))
+
+    &__wrapper
+      // padding: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
+
     &__text    
       margin-right: calc(20px + (210 - 20)*((110vw - 320px)/(1835 - 320)))
       margin-left: calc(20px + (100 - 20)*((110vw - 320px)/(1835 - 320)))
@@ -52,7 +92,13 @@ body, p,h1,h2,h3,h4,h5
       font-size: calc(10px + (18 - 10)*((110vw - 320px)/(1835 - 320)))
       padding: calc(2px + (5 - 2)*((110vw - 320px)/(1835 - 320)))
 
+    &__content-sliders
+      padding-left: calc(5px + (30 - 5)*((110vw - 320px)/(1835 - 320)))
+      padding-right: calc(5px + (30 - 5)*((110vw - 320px)/(1835 - 320)))
 
+
+  .btn-slider
+    padding: calc(5px + (20 - 5)*((110vw - 320px)/(1835 - 320)))
   
   .logos-section
       padding: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
@@ -92,28 +138,40 @@ body, p,h1,h2,h3,h4,h5
       &__signup-btn
         font-size: calc(10px + (16 - 10)*((110vw - 320px)/(1835 - 320)))
 
-.photo_banner-section
-  padding: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
-
-  &__text
-    margin-top: calc(10px + (70 - 10)*((110vw - 320px)/(1835 - 320)))
-
-  &__title
-    font-size: calc(20px + (42 - 20)*((110vw - 320px)/(1835 - 320)))
-
-  &__subtitle
-    font-size: calc(10px + (18 - 10)*((110vw - 320px)/(1835 - 320)))
-    margin-bottom: calc(5px + (24 - 5)*((110vw - 320px)/(1835 - 320)))
-
-  &__link
-    font-size: calc(10px + (18 - 10)*((110vw - 320px)/(1835 - 320)))
-  
-  .footer
+  .photo_banner-section
     padding: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
-    &__subtitle
-    font-size: calc(10px + (16 - 10)*((110vw - 320px)/(1835 - 320)))
 
-   
+    &__text
+      margin-top: calc(10px + (70 - 10)*((110vw - 320px)/(1835 - 320)))
+
+    &__title
+      font-size: calc(20px + (42 - 20)*((110vw - 320px)/(1835 - 320)))
+
+    &__subtitle
+      font-size: calc(10px + (18 - 10)*((110vw - 320px)/(1835 - 320)))
+      margin-bottom: calc(5px + (24 - 5)*((110vw - 320px)/(1835 - 320)))
+
+    &__link
+      font-size: calc(10px + (18 - 10)*((110vw - 320px)/(1835 - 320)))
+    
+    .footer
+      padding: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
+      
+
+      &_information-section
+        &__subtitle
+          font-size: calc(10px + (16 - 10)*((110vw - 320px)/(1835 - 320)))
+
+       
+            
+
+
+
+        
+
+  
+    
+
 
 
 
@@ -126,13 +184,7 @@ body, p,h1,h2,h3,h4,h5
     
 
 
-.btn-slider
-  width: 60px 
-  height: 60px
-  background-color: #fff
-  border-radius: 50%
-  border: none
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.06)
+
 
     
 

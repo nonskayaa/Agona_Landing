@@ -1,10 +1,10 @@
 $custom-black: #282828
 $custom-grey-border: #D0D5DD
 $custom-grey-background: #f9fafb
+
 .banner-section
   display: flex
   align-items: center
-  padding-bottom:52px
   justify-content: space-between
   background: $custom-grey-background
   min-width: 100%
@@ -13,7 +13,9 @@ $custom-grey-background: #f9fafb
   //   display: flex
   //   align-items: center
     
-   
+  &__wrapper
+    padding-bottom:52px
+    
   &__photo
     width: 50%
     height: auto
@@ -72,10 +74,16 @@ $custom-grey-background: #f9fafb
     display: flex
     justify-content: space-between
 
+  
+.btn-slider
+  width: auto
+  height: auto
+  padding: 20px
+  background-color: #fff
+  border-radius: 50%
+  border: none
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.06)
 
-// .absolute
-//   position: absolute
-//   z-index: 1
 
 
 
@@ -96,7 +104,6 @@ $custom-grey-background: #f9fafb
 .logo-group
   
   display: flex
-  background: yellow
   justify-content: space-evenly
   width: 80%
   

@@ -3,12 +3,13 @@ $custom-grey-footer: #475467
 
 .footer
   background: $custom-grey-background
-
+  padding: 72px 52px
   &_information-section
-    padding: 72px
     display: flex
     justify-content: space-between
     align-items: top
+    padding-bottom: 52px
+    // border-bottom: 2px solid  $custom-grey-border
     &__about-clonify
     &__logo
       margin-bottom: 16px
@@ -26,14 +27,35 @@ $custom-grey-footer: #475467
       border-radius: 37px
       margin-right: 16px
 
+    &__navigation
+        width: 50%
+        // margin: auto
 
-    &__navigation-table
+    &__table
+      width: 100%
 
-      th
-        padding: 0px 120px 16px 120px
-      td
-        padding: 16px 120px
+      td, th
         text-align: left
-        color: #5F6980
-      .table__link
-        text-decoration: none
+        padding: 15px
+      th
+        padding: 0 15px 15px 15px 
+
+
+
+.footer_bottom
+  display: flex
+  justify-content: space-between
+  border-top: 2px solid $custom-grey-border
+  padding-top: 52px
+
+  &__select-language
+    display: flex
+
+  &__flag
+    margin-right: 10px
+    
+  &__select-language
+    margin-right: 52px
+
+  &__settings
+    display: flex
