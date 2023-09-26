@@ -10,9 +10,11 @@
   font-family: Inter
   color: #282828
 
-body, p,h1,h2,h3,h4,h5
+body, p,h1,h2,h3,h4,h5,figure
   @include reset
 
+
+ 
 .with-icon
     display: flex
     align-items: center
@@ -48,6 +50,7 @@ body, p,h1,h2,h3,h4,h5
   display: block
 
 
+// это я тут пыталась типо отзывчивой страничку сделать, но честно не уверена что это так делается :)
 
 @media (max-width: 1800px) 
 
@@ -66,13 +69,6 @@ body, p,h1,h2,h3,h4,h5
 
     
   .banner-section
-    
-    // .content-sliders  
-    //   padding-left: calc(5px + (30 - 10)*((110vw - 320px)/(1835 - 320)))
-    //   padding-right: calc(5px + (30 - 10)*((110vw - 320px)/(1835 - 320)))
-
-    &__wrapper
-      // padding: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
 
     &__text    
       margin-right: calc(20px + (210 - 20)*((110vw - 320px)/(1835 - 320)))

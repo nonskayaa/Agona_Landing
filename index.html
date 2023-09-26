@@ -8,16 +8,360 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <img src="assets/img/Branding.png" alt="logo" class="header__logo" />
-        <nav class="header__navigation">
-          <ul class="list-navigation">
-            <li class="list-navigation__item mrgn-right40">Home</li>
-            <li class="list-navigation__item mrgn-right40">Shop</li>
-            <li class="list-navigation__item dropdown mrgn-right40">
+    <header class="header">
+      <img src="assets/img/Branding.png" alt="logo" class="header__logo" />
+      <nav class="header__navigation">
+        <ul class="list-navigation">
+          <li class="list-navigation__item mrgn-right40">
+            <a href="#" class="list-navigation__item-link">Home</a>
+          </li>
+          <li class="list-navigation__item mrgn-right40">
+            <a href="#" class="list-navigation__item-link">Shop</a>
+          </li>
+          <li class="list-navigation__item dropdown mrgn-right40">
+            <button class="dropbtn with-icon">
+              Product
+              <img
+                src="assets/img/chevron-down.png"
+                alt="chevron-down"
+                class="item__img"
+              />
+            </button>
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-content__link">Test 1</a>
+              <a href="#" class="dropdown-content__link">Test 2</a>
+              <a href="#" class="dropdown-content__link">Test 3</a>
+            </div>
+          </li>
+          <li class="list-navigation__item">
+            <a href="#" class="list-navigation__item-link">Pages</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="header__navigation">
+        <ul class="list-navigation">
+          <li class="list-navigation__item mrgn-right20">
+            <a href="#" class="list-navigation__item-link">
+              <img src="assets/img/search.svg" alt="loop" class="icon" />
+            </a>
+          </li>
+
+          <li class="list-navigation__item mrgn-right20">
+            <a href="#" class="list-navigation__item-link">
+              <img src="assets/img/user.svg" alt="user" class="icon" />
+            </a>
+          </li>
+
+          <li class="list-navigation__item mrgn-right20">
+            <a href="#" class="list-navigation__item-link">
+              <img src="assets/img/heart.svg" alt="heart" class="icon" />
+            </a>
+          </li>
+
+          <li class="list-navigation__item">
+            <a href="#" class="list-navigation__item-link">
+              <img src="assets/img/bag.png" alt="bag" class="icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="banner-section__wrapper">
+        <section class="banner-section">
+          <div class="banner-section__photo">
+            <img
+              src="assets/img/Paste image.png"
+              alt="bag photo"
+              class="photo"
+            />
+          </div>
+          <div class="banner-section__text">
+            <h4 class="banner-section__pre-title">IKIGAI</h4>
+            <h2 class="banner-section__title">
+              Leather bags<br />worth higging.
+            </h2>
+            <p class="banner-section__subtitle">
+              Keep your everyday style chic and on-trend with our<br />selection
+              20+ styles to choose from.
+            </p>
+            <a href="#" class="banner-section__link">See collection</a>
+          </div>
+          <div class="content-sliders">
+            <button class="btn-slider">
+              <img
+                src="assets/img/arrow-left.svg"
+                alt="arrow"
+                class="left-arrow"
+              />
+            </button>
+            <button class="btn-slider">
+              <img
+                src="assets/img/arrow-right.svg"
+                alt="arrow"
+                class="right-arrow"
+              />
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <section class="logos-section">
+        <div class="logos-section__container">
+          <button class="btn-slider">
+            <img
+              src="assets/img/arrow-left.svg"
+              alt="arrow"
+              class="left-arrow"
+            />
+          </button>
+
+          <div class="logo-group">
+            <img
+              src="assets/img/nike.png"
+              alt="nike logo"
+              class="logo-group__logo"
+            />
+            <img
+              src="assets/img/hush.svg"
+              alt="hush logo"
+              class="logo-group__logo"
+            />
+            <img
+              src="assets/img/puma.svg"
+              alt="puma logo"
+              class="logo-group__logo"
+            />
+            <img
+              src="assets/img/shoei.svg"
+              alt="shoei logo"
+              class="logo-group__logo"
+            />
+            <img
+              src="assets/img/marc.svg"
+              alt="marc logo"
+              class="logo-group__logo"
+            />
+            <img
+              src="assets/img/supreme.svg"
+              alt="supreme logo"
+              class="logo-group__logo"
+            />
+          </div>
+          <button class="btn-slider">
+            <img
+              src="assets/img/arrow-right.svg"
+              alt="arrow"
+              class="right-arrow"
+            />
+          </button>
+        </div>
+      </section>
+      <section class="photos-section">
+        <figure class="photos-section__card">
+          <img
+            src="assets/img/man_with_white_bag.png"
+            alt="man with white bag"
+            class="photos-section__photo"
+          />
+
+          <figcaption class="photos-section__text">
+            <p class="photos-section__subtitle">Featured</p>
+            <h4 class="photos-section__title">Nairo Series®</h4>
+          </figcaption>
+        </figure>
+        <figure class="photos-section__card">
+          <img
+            src="assets/img/man_with_blue_bag.png"
+            alt="man with blue bag"
+            class="photos-section__photo"
+          />
+          <figcaption class="photos-section__text">
+            <p class="photos-section__subtitle">New</p>
+            <h4 class="photos-section__title">Kensho Series®</h4>
+          </figcaption>
+        </figure>
+        <figure class="photos-section__card">
+          <img
+            src="assets/img/man_with_brwn_bag.png"
+            alt="man with brown bag"
+            class="photos-section__photo"
+          />
+          <figcaption class="photos-section__text">
+            <p class="photos-section__subtitle">Handmade</p>
+            <h4 class="photos-section__title">Atarashi Series®</h4>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="banner-section">
+        <div class="banner-section__photo">
+          <img
+            src="assets/img/girl_with_bag.png"
+            alt="girl with bag photo"
+            class="photo"
+          />
+        </div>
+        <div class="banner-section__text">
+          <h4 class="banner-section__pre-title">EXCLUSIVE</h4>
+          <h2 class="banner-section__title">50% OFF</h2>
+          <p class="banner-section__subtitle">
+            Sed ut perspiciatis unde omnis iste natus error sit<br />voluptatem
+            accusantium doloremque
+          </p>
+          <time class="time_discount">05d : 11h : 23m : 02s</time>
+          <button class="banner-section__btn">
+            <a href="#" class="banner-section__btn-link">Shop Now</a>
+          </button>
+        </div>
+      </section>
+
+      <section class="subscribe-newsletter_form">
+        <form>
+          <div class="subscribe-newsletter_form__container">
+            <label for="email" class="subscribe-newsletter_form__label">
+              <h3 class="subscribe-newsletter_form__title">
+                Join our newsletter
+              </h3>
+              <p class="subscribe-newsletter_form__subtitle">
+                Enjoy big discounts and latest updates right to your inbox.
+              </p>
+            </label>
+            <div class="subscribe-newsletter_form__input-section">
+              <div class="subscribe-newsletter_form__email-wrapper">
+                <img
+                  src="assets/img/emai_iconl.svg"
+                  alt="email icon"
+                  class="subscribe-newsletter_form__icon"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email address"
+                  class="subscribe-newsletter_form__email-input"
+                />
+              </div>
+              <button
+                class="subscribe-newsletter_form__signup-btn"
+                type="submit"
+              >
+                Signup
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="photo_banner-section">
+        <div class="photo_banner-section__background">
+          <img
+            src="assets/img/banner_man_with_bag.png"
+            alt="banner man with a bag"
+            class="photo_banner-section__photo"
+          />
+          <div class="photo_banner-section__text">
+            <h3 class="photo_banner-section__title">
+              Exquisite<br />Craftsmanship
+            </h3>
+            <p class="photo_banner-section__subtitle">
+              Phosfluor escently engage worldwide methodologies<br />with
+              web-enabled process-centric technology.
+            </p>
+            <a href="#" class="photo_banner-section__link">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <section class="footer_information-section">
+          <div class="footer_information-section__about-clonify">
+            <img
+              src="assets/img/Branding.png"
+              alt="logo"
+              class="footer_information-section__logo"
+            />
+            <p class="footer_information-section__subtitle">
+              Phosf luorescently engage worldwide<br />method process shopping.
+            </p>
+            <div class="footer_information-section__icons-wrapper">
+              <a href="#" class="footer_information-section__link">
+                <img
+                  src="assets/img/facebook.svg"
+                  alt="facebook logo"
+                  class="footer_information-section__icon"
+                />
+              </a>
+              <a href="#" class="footer_information-section__link">
+                <img
+                  src="assets/img/instagram.svg"
+                  alt="instagram logo"
+                  class="footer_information-section__icon"
+                />
+              </a>
+              <a href="#" class="footer_information-section__link">
+                <img
+                  src="assets/img/twitter.svg"
+                  alt="twitter logo"
+                  class="footer_information-section__icon"
+                />
+              </a>
+              <a href="#" class="footer_information-section__link">
+                <img
+                  src="assets/img/email.svg"
+                  alt="email icon"
+                  class="footer_information-section__icon"
+                />
+              </a>
+            </div>
+          </div>
+
+          <nav class="footer_information-section__navigation">
+            <table class="footer_information-section__table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Information</th>
+                  <th>Support</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Learn</td>
+                  <td>Privacy</td>
+                  <td>Updates</td>
+                </tr>
+                <tr>
+                  <td>Plugins</td>
+                  <td>Cookies</td>
+                  <td>Discord</td>
+                </tr>
+
+                <tr>
+                  <td>Gallery</td>
+                  <td>Terms</td>
+                  <td>Startups</td>
+                </tr>
+                <tr>
+                  <td>Pricing</td>
+                  <td>Security</td>
+                  <td>Contact</td>
+                </tr>
+              </tbody>
+            </table>
+          </nav>
+        </section>
+        <section class="footer_bottom">
+          <p class="footer_bottom__subtitle">© 2088 Nayzak Design</p>
+          <div class="footer_bottom__settings">
+            <div class="footer_bottom__select-language dropdown">
+              <img
+                src="assets/img/Flags.svg"
+                alt="american flag"
+                class="footer_bottom__flag"
+              />
               <button class="dropbtn with-icon">
-                Product
+                English
                 <img
                   src="assets/img/chevron-down.png"
                   alt="chevron-down"
@@ -29,355 +373,25 @@
                 <a href="#" class="dropdown-content__link">Test 2</a>
                 <a href="#" class="dropdown-content__link">Test 3</a>
               </div>
-
-              <!-- <p>Product</p>
-              <img
-                src="assets/img/chevron-down.png"
-                alt="chevron-down"
-                class="item__img"
-              /> -->
-            </li>
-            <li class="list-navigation__item">Pages</li>
-          </ul>
-        </nav>
-        <nav class="header__navigation">
-          <ul class="list-navigation">
-            <li class="list-navigation__item mrgn-right20">
-              <img src="assets/img/search.svg" alt="loop" class="icon" />
-            </li>
-            <li class="list-navigation__item mrgn-right20">
-              <img src="assets/img/user.svg" alt="user" class="icon" />
-            </li>
-            <li class="list-navigation__item mrgn-right20">
-              <img src="assets/img/heart.svg" alt="heart" class="icon" />
-            </li>
-            <li class="list-navigation__item">
-              <img src="assets/img/bag.png" alt="bag" class="icon" />
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main class="main">
-        <div class="banner-section__wrapper">
-          <section class="banner-section">
-            <div class="banner-section__photo">
-              <img
-                src="assets/img/Paste image.png"
-                alt="bag photo"
-                class="photo"
-              />
             </div>
-            <div class="banner-section__text">
-              <h4 class="banner-section__pre-title">IKIGAI</h4>
-              <h2 class="banner-section__title">
-                Leather bags<br />worth higging.
-              </h2>
-              <p class="banner-section__subtitle">
-                Keep your everyday style chic and on-trend with our<br />selection
-                20+ styles to choose from.
-              </p>
-              <a href="#" class="banner-section__link">See collection</a>
-            </div>
-            <div class="content-sliders">
-              <button class="btn-slider">
+            <div class="footer_bottom__select-currency dropdown">
+              <button class="dropbtn with-icon">
+                USD
                 <img
-                  src="assets/img/arrow-left.svg"
-                  alt="arrow"
-                  class="left-arrow"
+                  src="assets/img/chevron-down.png"
+                  alt="chevron-down"
+                  class="item__img"
                 />
               </button>
-              <button class="btn-slider">
-                <img
-                  src="assets/img/arrow-right.svg"
-                  alt="arrow"
-                  class="right-arrow"
-                />
-              </button>
-            </div>
-          </section>
-        </div>
-        <section class="logos-section">
-          <div class="logos-section__container">
-            <button class="btn-slider">
-              <img
-                src="assets/img/arrow-left.svg"
-                alt="arrow"
-                class="left-arrow"
-              />
-            </button>
-
-            <div class="logo-group">
-              <img
-                src="assets/img/nike.png"
-                alt="nike logo"
-                class="logo-group__logo"
-              />
-              <img
-                src="assets/img/hush.svg"
-                alt="hush logo"
-                class="logo-group__logo"
-              />
-              <img
-                src="assets/img/puma.svg"
-                alt="puma logo"
-                class="logo-group__logo"
-              />
-              <img
-                src="assets/img/shoei.svg"
-                alt="shoei logo"
-                class="logo-group__logo"
-              />
-              <img
-                src="assets/img/marc.svg"
-                alt="marc logo"
-                class="logo-group__logo"
-              />
-              <img
-                src="assets/img/supreme.svg"
-                alt="supreme logo"
-                class="logo-group__logo"
-              />
-            </div>
-            <button class="btn-slider">
-              <img
-                src="assets/img/arrow-right.svg"
-                alt="arrow"
-                class="right-arrow"
-              />
-            </button>
-          </div>
-        </section>
-        <section class="photos-section">
-          <div class="photos-section__card">
-            <img
-              src="assets/img/man_with_white_bag.png"
-              alt="man with white bag"
-              class="photos-section__photo"
-            />
-
-            <!-- правильно ли называю или по другому надо ? -->
-
-            <div class="photos-section__text">
-              <p class="photos-section__subtitle">Featured</p>
-              <h4 class="photos-section__title">Nairo Series®</h4>
-            </div>
-          </div>
-          <div class="photos-section__card">
-            <img
-              src="assets/img/man_with_blue_bag.png"
-              alt="man with blue bag"
-              class="photos-section__photo"
-            />
-            <div class="photos-section__text">
-              <p class="photos-section__subtitle">New</p>
-              <h4 class="photos-section__title">Kensho Series®</h4>
-            </div>
-          </div>
-          <div class="photos-section__card">
-            <img
-              src="assets/img/man_with_brwn_bag.png"
-              alt="man with brown bag"
-              class="photos-section__photo"
-            />
-            <div class="photos-section__text">
-              <p class="photos-section__subtitle">Handmade</p>
-              <h4 class="photos-section__title">Atarashi Series®</h4>
-            </div>
-          </div>
-        </section>
-        <!-- хочу применить стили, но все таки как то по другому хочется назвать эту секцию, чтобы отличалась, как лучше сделать? -->
-        <section class="banner-section">
-          <div class="banner-section__photo">
-            <img
-              src="assets/img/girl_with_bag.png"
-              alt="girl with bag photo"
-              class="photo"
-            />
-          </div>
-          <div class="banner-section__text">
-            <h4 class="banner-section__pre-title">EXCLUSIVE</h4>
-            <h2 class="banner-section__title">50% OFF</h2>
-            <p class="banner-section__subtitle">
-              Sed ut perspiciatis unde omnis iste natus error sit<br />voluptatem
-              accusantium doloremque
-            </p>
-            <time class="time_discount">05d : 11h : 23m : 02s</time>
-            <button class="banner-section__btn">Shop Now</button>
-          </div>
-        </section>
-
-        <!-- обводка по падингу, но хотелось бы чтобы обводка была не по нему, как сделать ? -->
-
-        <section class="subscribe-newsletter_form">
-          <form>
-            <div class="subscribe-newsletter_form__container">
-              <label for="email" class="subscribe-newsletter_form__label">
-                <h3 class="subscribe-newsletter_form__title">
-                  Join our newsletter
-                </h3>
-                <p class="subscribe-newsletter_form__subtitle">
-                  Enjoy big discounts and latest updates right to your inbox.
-                </p>
-              </label>
-              <div class="subscribe-newsletter_form__input-section">
-                <div class="subscribe-newsletter_form__email-wrapper">
-                  <img
-                    src="assets/img/emai_iconl.svg"
-                    alt="email icon"
-                    class="subscribe-newsletter_form__icon"
-                  />
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Email address"
-                    class="subscribe-newsletter_form__email-input"
-                  />
-                </div>
-                <button
-                  class="subscribe-newsletter_form__signup-btn"
-                  type="submit"
-                >
-                  Signup
-                </button>
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-content__link">Test 1</a>
+                <a href="#" class="dropdown-content__link">Test 2</a>
+                <a href="#" class="dropdown-content__link">Test 3</a>
               </div>
             </div>
-          </form>
-        </section>
-        <section class="photo_banner-section">
-          <div class="photo_banner-section__background">
-            <img
-              src="assets/img/banner_man_with_bag.png"
-              alt="banner man with a bag"
-              class="photo_banner-section__photo"
-            />
-            <div class="photo_banner-section__text">
-              <h3 class="photo_banner-section__title">
-                Exquisite<br />Craftsmanship
-              </h3>
-              <p class="photo_banner-section__subtitle">
-                Phosfluor escently engage worldwide methodologies<br />with
-                web-enabled process-centric technology.
-              </p>
-              <a href="#" class="photo_banner-section__link">Learn more</a>
-            </div>
           </div>
         </section>
-
-        <footer class="footer">
-          <section class="footer_information-section">
-            <div class="footer_information-section__about-clonify">
-              <img
-                src="assets/img/Branding.png"
-                alt="logo"
-                class="footer_information-section__logo"
-              />
-              <p class="footer_information-section__subtitle">
-                Phosf luorescently engage worldwide<br />method process
-                shopping.
-              </p>
-              <div class="footer_information-section__icons-wrapper">
-                <img
-                  src="assets/img/facebook.svg"
-                  alt="facebook logo"
-                  class="footer_information-section__icon"
-                />
-                <img
-                  src="assets/img/instagram.svg"
-                  alt="instagram logo"
-                  class="footer_information-section__icon"
-                />
-                <img
-                  src="assets/img/twitter.svg"
-                  alt="twitter logo"
-                  class="footer_information-section__icon"
-                />
-                <img
-                  src="assets/img/email.svg"
-                  alt="email icon"
-                  class="footer_information-section__icon"
-                />
-              </div>
-            </div>
-            <!-- container -->
-            <nav class="footer_information-section__navigation">
-              <table class="footer_information-section__table">
-                <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Information</th>
-                    <th>Support</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Learn</td>
-                    <td>Privacy</td>
-                    <td>Updates</td>
-                  </tr>
-                  <tr>
-                    <td>Plugins</td>
-                    <td>Cookies</td>
-                    <td>Discord</td>
-                  </tr>
-
-                  <tr>
-                    <td>Gallery</td>
-                    <td>Terms</td>
-                    <td>Startups</td>
-                  </tr>
-                  <tr>
-                    <td>Pricing</td>
-                    <td>Security</td>
-                    <td>Contact</td>
-                  </tr>
-                </tbody>
-              </table>
-            </nav>
-          </section>
-          <section class="footer_bottom">
-            <p class="footer_bottom__subtitle">© 2088 Nayzak Design</p>
-            <div class="footer_bottom__settings">
-              <div class="footer_bottom__select-language dropdown ">
-                <img
-                  src="assets/img/Flags.svg"
-                  alt="american flag"
-                  class="footer_bottom__flag"
-                />
-                <button class="dropbtn with-icon">
-                  English
-                  <img
-                    src="assets/img/chevron-down.png"
-                    alt="chevron-down"
-                    class="item__img"
-                  />
-                </button>
-                <div class="dropdown-content">
-                  <a href="#" class="dropdown-content__link">Test 1</a>
-                  <a href="#" class="dropdown-content__link">Test 2</a>
-                  <a href="#" class="dropdown-content__link">Test 3</a>
-                </div>
-              </div>
-              <div class="footer_bottom__select-currency dropdown">
-                
-                  <button class="dropbtn with-icon">
-                    USD
-                    <img
-                      src="assets/img/chevron-down.png"
-                      alt="chevron-down"
-                      class="item__img"
-                    />
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#" class="dropdown-content__link">Test 1</a>
-                    <a href="#" class="dropdown-content__link">Test 2</a>
-                    <a href="#" class="dropdown-content__link">Test 3</a>
-                  </div>
-              </div>
-            </div>
-          </section>
-        </footer>
-      </main>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>
