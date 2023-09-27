@@ -15,7 +15,7 @@
   padding: 16px 52px;
   font-size: 14px;
   font-weight: 600;
-  width: 100vw;
+  width: 100%;
 }
 .header__logo {
   min-width: 8vw;
@@ -563,7 +563,7 @@ body, p, h1, h2, h3, h4, h5, figure {
 }
 
 .dropdown-content a {
-  color: black;
+  color: #282828;
   padding: 12px 16px;
   text-decoration: none;
   display: block;

@@ -14,6 +14,9 @@ body, p,h1,h2,h3,h4,h5,figure
   @include reset
 
 
+
+
+
  
 .with-icon
     display: flex
@@ -55,6 +58,8 @@ body, p,h1,h2,h3,h4,h5,figure
 @media (max-width: 1800px) 
 
   .header
+
+    // @include adaptiv-value($property: padding-left, $startSize: 52, $minSize: 10)
     padding-left: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
     padding-right: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
     font-size: calc(10px + (14 - 10)*((110vw - 320px)/(1835 - 320)))
