@@ -53,13 +53,13 @@ body, p,h1,h2,h3,h4,h5,figure
   display: block
 
 
-// это я тут пыталась типо отзывчивой страничку сделать, но честно не уверена что это так делается :)
 
-@media (max-width: 1800px) 
+
+
+
+@media (min-width: 1025px) and (max-width: 1900px) 
 
   .header
-
-    // @include adaptiv-value($property: padding-left, $startSize: 52, $minSize: 10)
     padding-left: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
     padding-right: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
     font-size: calc(10px + (14 - 10)*((110vw - 320px)/(1835 - 320)))
@@ -121,6 +121,8 @@ body, p,h1,h2,h3,h4,h5,figure
   .subscribe-newsletter_form
       padding: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
 
+      &__signup-mobile-btn
+        display: none
       &__title
         font-size: calc(20px + (42 - 20)*((110vw - 320px)/(1835 - 320)))
 
@@ -162,6 +164,128 @@ body, p,h1,h2,h3,h4,h5,figure
       &_information-section
         &__subtitle
           font-size: calc(10px + (16 - 10)*((110vw - 320px)/(1835 - 320)))
+
+
+@media (min-width: 320px) and (max-width: 1024px)
+  .header
+    &__navigation
+      display: none
+    
+    
+
+  .banner-section
+    background: white
+    flex-wrap: wrap
+    .content-sliders
+      display: none
+    &__photo
+      width: 100%
+      padding-bottom: 35px  
+    
+    &__text
+      margin:0
+      padding: 20px
+      width: 100%
+
+    &__pre-title
+      font-size: 1rem
+
+    &__title
+      font-size: 25px
+    
+    &__subtitle
+      font-size: 15px
+    
+    &__link
+      font-size: 1rem
+    
+    &__btn
+      width: 35%
+      font-size: 1rem
+      line-height: 30px
+  .logos-section
+    padding: 5%
+    &__container
+      padding: 0
+      border: none
+      flex-wrap: wrap
+    .btn-slider
+      display: none
+    
+  .logo-group
+    flex-wrap: wrap
+    width: 100%
+
+    &__logo
+      width: 40%
+      margin-bottom: 10%
+
+  .photos-section
+    flex-wrap: wrap
+    align-items: center
+    &__card
+      margin: 0  
+      margin-bottom: 10%
+    &__title
+      font-size: 2rem
+    &__subtitle
+      font-size: 1rem
+
+    &__photo
+      width: 86vw
+
+  .subscribe-newsletter_form
+    
+    padding: 10px
+    form
+      padding: 10px
+      width: 100%
+      height: auto
+    &__email-wrapper
+      margin: 0
+    &__container
+      padding: 100px 0px
+      width: 100%
+    &__input-section
+      padding: 20px
+      margin: 0
+    label
+      padding: 0 
+    &__title
+      font-size: 1.7rem
+      text-align: center
+    
+    &__subtitle
+      font-size: 1rem
+      text-align: center
+    
+    &__signup-btn
+      display: none
+    
+    &__signup-mobile-btn
+      line-height: 30px
+      display: block
+      background: $custom-black
+      color: white
+      border-radius: 6px
+      width: 100%
+      margin-top : 30px
+
+
+  .photo_banner-section
+    padding: 10px
+    width: 100%
+    &__text
+      
+    &__title
+      margin-bottom: 5px
+      font-size: 2rem
+    
+    &__subtitle
+      font-size: 1rem
+      
+  .footer
+    display: none
 
        
             
