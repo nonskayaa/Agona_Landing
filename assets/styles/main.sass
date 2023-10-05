@@ -70,7 +70,8 @@ body, p,h1,h2,h3,h4,h5,figure
     .margin-right20
       margin-right: calc(10px + (20 - 10)*((110vw - 320px)/(1835 - 320)))
 
-      
+    &__navigation-mobile
+      display: none
 
     
   .banner-section
@@ -147,6 +148,9 @@ body, p,h1,h2,h3,h4,h5,figure
     &__text
       margin-top: calc(10px + (70 - 10)*((110vw - 320px)/(1835 - 320)))
 
+    &__photo
+      &-mobile
+        display: none
     &__title
       font-size: calc(20px + (42 - 20)*((110vw - 320px)/(1835 - 320)))
 
@@ -157,20 +161,22 @@ body, p,h1,h2,h3,h4,h5,figure
     &__link
       font-size: calc(10px + (18 - 10)*((110vw - 320px)/(1835 - 320)))
     
-    .footer
-      padding: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
+  .footer
+    padding: calc(10px + (52 - 10)*((110vw - 320px)/(1835 - 320)))
       
 
-      &_information-section
-        &__subtitle
-          font-size: calc(10px + (16 - 10)*((110vw - 320px)/(1835 - 320)))
+    &_information-section
+      &__subtitle
+        font-size: calc(10px + (16 - 10)*((110vw - 320px)/(1835 - 320)))
 
+      &__navigation-mobile
+        display: none
 
 @media (min-width: 320px) and (max-width: 1024px)
   .header
+    padding: 18px
     &__navigation
       display: none
-    
     
 
   .banner-section
@@ -203,6 +209,8 @@ body, p,h1,h2,h3,h4,h5,figure
       width: 35%
       font-size: 1rem
       line-height: 30px
+    .time_discount
+      font-size: 2rem
   .logos-section
     padding: 5%
     &__container
@@ -221,7 +229,7 @@ body, p,h1,h2,h3,h4,h5,figure
       margin-bottom: 10%
 
   .photos-section
-    flex-wrap: wrap
+    display: inline
     align-items: center
     &__card
       margin: 0  
@@ -232,7 +240,7 @@ body, p,h1,h2,h3,h4,h5,figure
       font-size: 1rem
 
     &__photo
-      width: 86vw
+      width: 90%
 
   .subscribe-newsletter_form
     
@@ -273,24 +281,66 @@ body, p,h1,h2,h3,h4,h5,figure
 
 
   .photo_banner-section
-    padding: 10px
-    width: 100%
-    &__text
-      
+    padding: 15px 0px
     &__title
       margin-bottom: 5px
       font-size: 2rem
     
     &__subtitle
       font-size: 1rem
+    &__photo
+      display: none
+
       
   .footer
-    display: none
+    flex-wrap: wrap
+    align-items: center
+    width: 100%
+    padding: 50px 10px
+    
+    &_information-section
+      flex-wrap: wrap
+      align-items: center
+      display: flex
+      padding: 0
+      &__about-clonify
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+      &__subtitle
+        width: 100%
+      &__icons-wrapper
+        width: 100%
+        display: flex
+        justify-content: space-evenly
+      &__icon
+        padding: 15px
+      &__navigation
+        display: none
+        &-mobile
+          width: 100%
+          flex-wrap: wrap
 
-       
+          .dropbtn
+            width: 100%
+            padding: 15px
+            font-size: 1rem
+            border-bottom: 2px solid $custom-grey-border 
+          .with-icon
+            justify-content: space-between
             
-
-
+    &_bottom
+      display: flex
+      border: none
+      flex-wrap: wrap
+      flex-direction: column-reverse
+      &__subtitle
+        width: 100%
+        text-align: center
+      &__settings
+        width: 100%
+        margin-bottom: 25px
+        justify-content: space-evenly
 
         
 

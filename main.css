@@ -235,6 +235,9 @@
 .photo_banner-section__photo {
   width: 100%;
 }
+.photo_banner-section__photo-mobile {
+  width: 95%;
+}
 .photo_banner-section__text {
   margin-top: 70px;
   text-align: center;
@@ -454,6 +457,9 @@
 .photo_banner-section__photo {
   width: 100%;
 }
+.photo_banner-section__photo-mobile {
+  width: 95%;
+}
 .photo_banner-section__text {
   margin-top: 70px;
   text-align: center;
@@ -503,6 +509,9 @@
 }
 .footer_information-section__navigation {
   width: 50%;
+}
+.footer_information-section__navigation-mobile {
+  display: flex;
 }
 .footer_information-section__table {
   width: 100%;
@@ -597,6 +606,9 @@ body, p, h1, h2, h3, h4, h5, figure {
   .header .margin-right20 {
     margin-right: calc(10px + 10 * (110vw - 320px) / 1515);
   }
+  .header__navigation-mobile {
+    display: none;
+  }
   .banner-section__text {
     margin-right: calc(20px + 190 * (110vw - 320px) / 1515);
     margin-left: calc(20px + 80 * (110vw - 320px) / 1515);
@@ -673,6 +685,9 @@ body, p, h1, h2, h3, h4, h5, figure {
   .photo_banner-section__text {
     margin-top: calc(10px + 60 * (110vw - 320px) / 1515);
   }
+  .photo_banner-section__photo-mobile {
+    display: none;
+  }
   .photo_banner-section__title {
     font-size: calc(20px + 22 * (110vw - 320px) / 1515);
   }
@@ -683,14 +698,20 @@ body, p, h1, h2, h3, h4, h5, figure {
   .photo_banner-section__link {
     font-size: calc(10px + 8 * (110vw - 320px) / 1515);
   }
-  .photo_banner-section .footer {
+  .footer {
     padding: calc(10px + 42 * (110vw - 320px) / 1515);
   }
-  .photo_banner-section .footer_information-section__subtitle {
+  .footer_information-section__subtitle {
     font-size: calc(10px + 6 * (110vw - 320px) / 1515);
+  }
+  .footer_information-section__navigation-mobile {
+    display: none;
   }
 }
 @media (min-width: 320px) and (max-width: 1024px) {
+  .header {
+    padding: 18px;
+  }
   .header__navigation {
     display: none;
   }
@@ -727,6 +748,9 @@ body, p, h1, h2, h3, h4, h5, figure {
     font-size: 1rem;
     line-height: 30px;
   }
+  .banner-section .time_discount {
+    font-size: 2rem;
+  }
   .logos-section {
     padding: 5%;
   }
@@ -747,7 +771,7 @@ body, p, h1, h2, h3, h4, h5, figure {
     margin-bottom: 10%;
   }
   .photos-section {
-    flex-wrap: wrap;
+    display: inline;
     align-items: center;
   }
   .photos-section__card {
@@ -761,7 +785,7 @@ body, p, h1, h2, h3, h4, h5, figure {
     font-size: 1rem;
   }
   .photos-section__photo {
-    width: 86vw;
+    width: 90%;
   }
   .subscribe-newsletter_form {
     padding: 10px;
@@ -806,8 +830,7 @@ body, p, h1, h2, h3, h4, h5, figure {
     margin-top: 30px;
   }
   .photo_banner-section {
-    padding: 10px;
-    width: 100%;
+    padding: 15px 0px;
   }
   .photo_banner-section__title {
     margin-bottom: 5px;
@@ -816,8 +839,67 @@ body, p, h1, h2, h3, h4, h5, figure {
   .photo_banner-section__subtitle {
     font-size: 1rem;
   }
-  .footer {
+  .photo_banner-section__photo {
     display: none;
+  }
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 50px 10px;
+  }
+  .footer_information-section {
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    padding: 0;
+  }
+  .footer_information-section__about-clonify {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer_information-section__subtitle {
+    width: 100%;
+  }
+  .footer_information-section__icons-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer_information-section__icon {
+    padding: 15px;
+  }
+  .footer_information-section__navigation {
+    display: none;
+  }
+  .footer_information-section__navigation-mobile {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer_information-section__navigation-mobile .dropbtn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border-bottom: 2px solid #D0D5DD;
+  }
+  .footer_information-section__navigation-mobile .with-icon {
+    justify-content: space-between;
+  }
+  .footer_bottom {
+    display: flex;
+    border: none;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .footer_bottom__subtitle {
+    width: 100%;
+    text-align: center;
+  }
+  .footer_bottom__settings {
+    width: 100%;
+    margin-bottom: 25px;
+    justify-content: space-evenly;
   }
 }
 
